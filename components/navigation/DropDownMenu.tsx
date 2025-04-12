@@ -19,7 +19,6 @@ export default function DropDownMenu(props:Props) {
         setAnchorEl(() => event.currentTarget);
     };
     const handleClose = (event: React.MouseEvent<HTMLDivElement>) => {
-        console.log("halaa")
         setAnchorEl(() => null);
     };
 
@@ -33,7 +32,7 @@ export default function DropDownMenu(props:Props) {
                 onClick={handleMouseEnter}
                 // onMouseEnter={handleMouseEnter}
                 // onMouseLeave={handleClose}  // Close when hover ends
-                className='flex items-center'
+                className='flex items-center gap-2'
             >
                 <p>{route.name}</p>
                 <ExpandMoreIcon />

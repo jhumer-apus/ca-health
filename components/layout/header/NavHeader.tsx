@@ -1,6 +1,5 @@
 import DropDownMenu from "@/components/navigation/DropDownMenu";
 import { useRoutes } from "@/hooks/routes";
-import { RouteType } from "@/types/route";
 import Link from "next/link";
 
 
@@ -8,8 +7,8 @@ export default function NavHeader() {
     const {routes} = useRoutes()
     
     return (
-        <nav>
-            <ul className="flex gap-4">
+        <nav className="hidden md:block">
+            <ul className="flex gap-6">
                 {routes.map((route, index) => (
                     <li key={index}>
                         <Link href={route.href}>
