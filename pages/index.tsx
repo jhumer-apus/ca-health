@@ -1,21 +1,25 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import RedirectButton from "@/components/RedirectButton";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import ProductCard from "@/components/ProductCard";
 
 export default function Home() {
+  const products = [
+    {
+      name: "Custom Bracing",
+      imagePath: "/images/bracing.png",
+    },
+    {
+      name: "TENS Devices",
+      imagePath: "/images/tens.png",
+    },
+    {
+      name: "Compression",
+      imagePath: "/images/compression.png",
+    }
+  ]
   return (
     <div className="text-white">
       <main className="">
-
         <section className="w-full h-[650px] overflow-hidden">
           <iframe
             className="w-full h-full transform scale-170"
@@ -35,9 +39,9 @@ export default function Home() {
 
         <section className="bg-white text-black flex flex-col md:flex-row md:justify-around gap-8 px-4 py-8 md:py-40">
           <div id="welcome-wrapper-text" className="flex flex-col gap-8 w-full md:w-1/2">
-            <div className="m-auto w-[500px]">
-              <p className="text-slate-800 text-6xl font-semibold text-center md:text-left">Welcome!</p><br></br>
-              <p className="text-slate-400 text-center md:text-left">We are a medical company that helps your life to be comfortable through the use of compression and ortheopedic equipment.</p><br></br>
+            <div className="m-auto md:w-[500px]">
+              <p className="text-slate-800 text-6xl font-semibold text-center md:text-left whitespace-normal">Welcome!</p><br></br>
+              <p className="text-slate-400 text-center md:text-left whitespace-normal">We are a medical company that helps your life to be comfortable through the use of compression and ortheopedic equipment.</p><br></br>
               <RedirectButton label="Get Started" href="" className="hover:bg-gray-500"/>
             </div>
           </div>
@@ -55,7 +59,18 @@ export default function Home() {
             </div>
             <div id="box" className="hidden md:block w-[600px] h-[400px] bg-[#2d2d2d] shadow-[0_0_60px_4px_rgba(0,255,255,.8)]"></div>
           </div>
+        </section>
 
+        <section className="bg-white py-12 text-zinc-700">
+          <div className="text-center m-auto max-w-[850px]">
+            <p className="text-5xl font-bold">Our Products</p><br></br>
+            <p>We offer a wide range of medical products from custom orthotics, TENS units, compression stockings, and custom fitted braces. All to offer our clients the best possible support. </p>
+          </div>
+          <div className="flex flex-col md:flex-row gap-4 w-fit m-auto mt-10">
+            {products.map(prod => (
+              <ProductCard imagePath={prod.imagePath} name={prod.name} />
+            ))}
+          </div>
         </section>
       </main>
     </div>
