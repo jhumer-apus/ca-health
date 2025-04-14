@@ -42,7 +42,7 @@ export default function Home() {
             <div className="m-auto md:w-[500px]">
               <p className="text-slate-800 text-6xl font-semibold text-center md:text-left whitespace-normal">Welcome!</p><br></br>
               <p className="text-slate-400 text-center md:text-left whitespace-normal">We are a medical company that helps your life to be comfortable through the use of compression and ortheopedic equipment.</p><br></br>
-              <RedirectButton label="Get Started" href="" className="hover:bg-gray-500"/>
+              <RedirectButton label="Get Started" href="" className="hover:bg-gray-500 m-auto md:ml-0"/>
             </div>
           </div>
           <div id="welcome-wrapper-image" className="w-full md:w-1/2">
@@ -55,7 +55,7 @@ export default function Home() {
             <div className="text-left w-full md:w-[600px] flex flex-col gap-8">
               <p className="text-6xl font-bold ">Our Featured Product</p>
               <p className="text-lg">“Whether you experience pain in the knees, back, hands, elbows or shoulders, Bauerfeind Train braces are designed to restore mobility and improve performance. They are made from an anatomically knitted breathable fabric with visco-elastic inserts. As the join moves, they provide a therapeutic massage and stability. This stimulates the circulation and promotes the healing process.” – Bauerfeind </p>
-              <RedirectButton label="Get Fitted" href="" className="hover:bg-black"/>
+              <RedirectButton label="Get Fitted" href="" className="hover:bg-black "/>
             </div>
             <div id="box" className="hidden md:block w-[600px] h-[400px] bg-[#2d2d2d] shadow-[0_0_60px_4px_rgba(0,255,255,.8)]"></div>
           </div>
@@ -66,11 +66,28 @@ export default function Home() {
             <p className="text-5xl font-bold">Our Products</p><br></br>
             <p>We offer a wide range of medical products from custom orthotics, TENS units, compression stockings, and custom fitted braces. All to offer our clients the best possible support. </p>
           </div>
-          <div className="flex flex-col md:flex-row gap-4 w-fit m-auto mt-10">
+          <div className="flex flex-col md:flex-row flex-wrap gap-4 w-fit m-auto mt-10">
             {products.map(prod => (
               <ProductCard imagePath={prod.imagePath} name={prod.name} />
             ))}
           </div>
+        </section>
+
+        <section className="bg-[url('/images/together.png')] bg-cover bg-center flex justify-end py-12 px-4">
+            <div className="md:w-1/2 py-12 px-4">
+              <div className="bg-white p-12 text-black h-full w-full md:w-fit md:my-12">
+                <p className="text-4xl font-semibold">Our News & Blog</p>
+                <hr className="bg-slate-400 my-8 w-32 h-2" />
+                <div className="flex flex-col gap-6 text-xl text-slate-500">
+                  <p>The holidays are around the corner, here are our holiday hours!  🎄❄️☃️</p>
+                  <p>December 24, 2025: 11am – 4pm</p>
+                  <p>December 25 & 26, 2025: Closed</p>
+                  <p>December 27 – 31, 2025: Regular Hours</p>
+                  <p>Happy Holidays!</p>
+                </div>
+                <RedirectButton label="Book Now" href={""} className="mt-16"/>
+              </div>
+            </div>
         </section>
       </main>
     </div>

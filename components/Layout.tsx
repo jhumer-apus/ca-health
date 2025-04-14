@@ -1,6 +1,7 @@
 import { PropsWithChildren } from "react";
 import Header from "./layout/Header";
 import Sidebar from "./layout/Sidebar";
+import Footer from "./layout/Footer";
 
 export default function Layout({ children }: PropsWithChildren) {
   return (
@@ -9,6 +10,7 @@ export default function Layout({ children }: PropsWithChildren) {
       <div className="w-full">
         <Header />
         {children}
+        <Footer />
       </div>
     </div>
   );
