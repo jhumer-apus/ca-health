@@ -29,12 +29,12 @@ export default function DropDownMenu(props:Props) {
                 aria-controls={open ? `${route.id}-dropdown` : undefined}
                 aria-haspopup="true"
                 aria-expanded={open ? 'true' : undefined}
-                onClick={handleMouseEnter}
-                // onMouseEnter={handleMouseEnter}
+                // onClick={handleMouseEnter}
+                onMouseEnter={handleMouseEnter}
                 // onMouseLeave={handleClose}  // Close when hover ends
                 className='flex items-center gap-2'
             >
-                <p>{route.name}</p>
+                <Link href={route.href}>{route.name}</Link>
                 <ExpandMoreIcon />
             </div>
             <Menu

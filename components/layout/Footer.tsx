@@ -2,8 +2,8 @@ import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
 
 export default function Footer() {
     return (
-        <footer className="bg-slate-800 p-12">
-            <div className="flex flex-col md:flex-row gap-8 md:gap-40 w-fit m-auto">
+        <footer className="bg-zinc-800 p-12">
+            <div className="flex flex-col md:flex-row flex-wrap gap-8 md:gap-40 w-fit m-auto">
                 <div id="email-wrapper">
                     <div className="flex items-center gap-4">
                         <img src="logos/ca-logo.png" width={60}/>

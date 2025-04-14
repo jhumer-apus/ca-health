@@ -3,13 +3,13 @@ export const useRoutes = () => {
         { 
             id: "home", 
             name: "Home", 
-            href: "",
+            href: "/",
             subRoutes: []
         },
         { 
             id: "products", 
             name: "Products", 
-            href: "",
+            href: "/products",
             subRoutes: [
                 { 
                     id: "orthopedic-bracing", 

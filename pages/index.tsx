@@ -85,7 +85,7 @@ export default function Home() {
                   <p>December 27 – 31, 2025: Regular Hours</p>
                   <p>Happy Holidays!</p>
                 </div>
-                <RedirectButton label="Book Now" href={""} className="mt-16"/>
+                <RedirectButton label="Book Now" href={""} className="mt-20 hover:bg-black"/>
               </div>
             </div>
         </section>

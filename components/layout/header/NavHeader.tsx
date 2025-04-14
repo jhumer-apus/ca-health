@@ -11,19 +11,15 @@ export default function NavHeader() {
             <ul className="flex gap-6">
                 {routes.map((route, index) => (
                     <li key={index}>
-                        <Link href={route.href}>
-                            <div className="text-white text-md">
-
-                                {route.subRoutes.length > 0 
-                                    ?   (
-                                            <DropDownMenu route={route} />
-                                        ) 
-                                    :   (
-                                            <div>{route.name}</div>
-                                        )
-                                }
-                            </div>
-                        </Link>
+                        {route.subRoutes.length > 0 ? 
+                        (
+                            <DropDownMenu route={route} />
+                        ) :
+                        (
+                            <Link href={route.href}>
+                                <div className="text-white text-md">{route.name}</div>
+                            </Link>
+                        )}
                     </li>
                 ))}
             </ul>
