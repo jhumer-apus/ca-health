@@ -14,8 +14,8 @@ export default function Products() {
             
             <section className="bg-white p-12">
                 <div className="m-auto w-fit flex flex-col md:flex-row flex-wrap gap-6">
-                    {products.map(prod => (
-                        <div className="flex flex-col gap-6 w-84">
+                    {products.map((prod,index:number) => (
+                        <div key={index} className="flex flex-col gap-6 w-84">
                             <Link href={prod.href}>
                                 <button className="text-white bg-stone-700 p-2 w-full font-bold text-xl hover:bg-orange-500 cursor-pointer">{prod.name}</button>
                             </Link>

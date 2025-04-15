@@ -16,15 +16,14 @@ export const products: ProductType[] = [
         name: "Compression Stockings",
         description: "Gradient compression garments are used to increase blood circulation and reduce swelling in those with circulation disorders and can also assist in athletic performance. Gradient compression socks, for example, apply the greatest amount of pressure near the ankle and decreases as it extends up the calf, stopping under the knee cap. Athletic gradient compression garments, usually made of spandex, offer support all over the body using the same principles to provide structural support. Athletes also use them as a recovery aid. That doesn’t mean that they are only meant for the athletically inclined.",
         imagePath: "images/compression.png",
-        href:"/products/orthopedic-bracing"
-
+        href:"/products/compression-stockings"
 
     },
     {
         name: "Tens Machine",
         description: "DR-HO’S Pain Therapy System helps you get relief from pain. Developed by Dr. Michael Ho in his pain clinic, The Pain Therapy System is a TENS device that works to effectively relieve pain in as little as 20 minutes.",
         imagePath: "images/tens.png",
-        href:"/products/orthopedic-bracing"
+        href:"/products/tens"
 
     }
 ]

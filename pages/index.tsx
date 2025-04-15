@@ -67,8 +67,8 @@ export default function Home() {
             <p>We offer a wide range of medical products from custom orthotics, TENS units, compression stockings, and custom fitted braces. All to offer our clients the best possible support. </p>
           </div>
           <div className="flex flex-col md:flex-row flex-wrap gap-4 w-fit m-auto mt-10">
-            {products.map(prod => (
-              <ProductCard imagePath={prod.imagePath} name={prod.name} />
+            {products.map((prod, index:number) => (
+              <ProductCard key={index} imagePath={prod.imagePath} name={prod.name} />
             ))}
           </div>
         </section>

@@ -47,6 +47,23 @@ export default function OrthopedicBracing() {
                     ))}
                 </div>
             </section>
+
+            <section className="bg-[url('/images/building.png')] bg-center h-fit">
+                <div className="bg-zinc-900/90 w-full h-full p-20">
+                    <div className="w-fit m-auto flex flex-col md:flex-row gap-8 md:gap-34 items-center">
+                        <div className="text-center md:text-left w-80 text-zinc-400 leading-loose">Bauerfeind has the right sport braces, supports and compression products to keep you in the game and improve your performance. True medical-grade compression by Bauerfeind helps improve circulation to boost oxygenating blood flow and remove inflammation. This can help reduce post-exercise soreness and improve recovery times. Find the right brace for your activity below.</div>
+                        <img src={process.env.NEXT_PUBLIC_LOGO} className="size-25"/>
+                        <div className="flex flex-col gap-12 items-center md:items-start">
+                            <p className="text-4xl font-semibold">
+                                “Freedom to<br/>
+                                To live life”
+                            </p>
+                            <hr  className="w-25 font-bold bg-white h-1 "/>
+                            <p className="text-xl italic">{process.env.NEXT_PUBLIC_COMPANY}</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     )
 }

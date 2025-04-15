@@ -9,10 +9,9 @@ export default function ProductIntro(props: Props) {
 
     const { name, intro, coverImagePath } = props
 
-    console.log(coverImagePath)
     return (
         <section 
-            className={` bg-cover bg-center h-full md:h-[800px] flex`}       
+            className={`bg-cover bg-center h-full md:h-[800px] flex`}       
             style={{ backgroundImage: `url(${coverImagePath})` }}
         >
             <div id="left" className="w-full md:w-1/2 relative mt-20 p-4">
