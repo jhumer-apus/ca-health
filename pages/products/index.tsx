@@ -1,3 +1,6 @@
+import { products } from "@/data/product";
+import Link from "next/link";
+
 export default function Products() {
     return (
         <div>
@@ -10,8 +13,24 @@ export default function Products() {
             </section>
             
             <section className="bg-white p-12">
-                <div className="m-auto w-fit">
-                    
+                <div className="m-auto w-fit flex flex-col md:flex-row flex-wrap gap-6">
+                    {products.map(prod => (
+                        <div className="flex flex-col gap-6 w-84">
+                            <Link href={prod.href}>
+                                <button className="text-white bg-stone-700 p-2 w-full font-bold text-xl hover:bg-orange-500 cursor-pointer">{prod.name}</button>
+                            </Link>
+                            <div className="w-full h-64 shadow-2xl overflow-hidden">
+                                <img 
+                                    src={prod.imagePath}
+                                    alt={prod.name}
+                                    className="object-contain max-h-64 m-auto"
+                                />
+                            </div>
+                            <div className="text-slate-500">
+                                {prod.description}
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </section>
         </div>

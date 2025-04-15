@@ -14,13 +14,19 @@ export const useRoutes = () => {
                 { 
                     id: "orthopedic-bracing", 
                     name: "Orthopedic Bracing", 
-                    href: "",
+                    href: "/products/orthopedic-bracing",
                     subRoutes: []
                 },
                 { 
                     id: "compression-stocking", 
                     name: "Compression Stocking", 
-                    href: "",
+                    href: "compression-stocking",
+                    subRoutes: []
+                },
+                { 
+                    id: "tens", 
+                    name: "TENS", 
+                    href: "tens",
                     subRoutes: []
                 },
             ]
