@@ -1,3 +1,5 @@
+import ConcernSection from "@/components/contact/ConcernSection";
+import ContactUsButton from "@/components/contact/ContactUsButton";
 import ProductIntro from "@/components/ProductIntro";
 
 export default function Tens() {
@@ -8,6 +10,9 @@ export default function Tens() {
                 name="TENS Machine" 
                 coverImagePath={"/images/tens.png"} 
                 intro={<p>DR-HO’S pain relief devices use TENS Therapy, EMS & DR-HO’S Patented AMP Technology to temporarily increase local blood circulation and symptomatically relieve chronic, intractable pain and pain associated with arthritis. Learn more about the science commissioned by Dr. Michael Ho to test the effectiveness of these devices.</p>}
+            />
+            <ConcernSection 
+                statement="Please ask us if this unit is right for you ~ Tandem Team"
             />
         </div>
     )

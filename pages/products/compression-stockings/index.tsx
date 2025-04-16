@@ -1,4 +1,5 @@
-import ContactUsButton from "@/components/ContactUsButton"
+import ConcernSection from "@/components/contact/ConcernSection"
+import ContactUsButton from "@/components/contact/ContactUsButton"
 import ProductIntro from "@/components/ProductIntro"
 
 export default function CompressionStockings() {
@@ -50,12 +51,9 @@ export default function CompressionStockings() {
                 </div>
             </section>
 
-            <section className="p-8">
-                <div className="max-w-[1300px] m-auto py-12 flex flex-col md:flex-row justify-between gap-8 itemx-center">
-                    <ContactUsButton />
-                    <p className="text-black text-2xl italic">Please ask us which stockings is best suited for your needs ~ Tandem Team</p>
-                </div>
-            </section>
+            <ConcernSection 
+                statement="Please ask us which stockings is best suited for your needs ~ Tandem Team"
+            />
         </div>
     )
 }

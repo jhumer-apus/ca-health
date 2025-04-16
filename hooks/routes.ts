@@ -34,7 +34,7 @@ export const useRoutes = () => {
         { 
             id: "contact", 
             name: "Contact", 
-            href: "",
+            href: "/contact",
             subRoutes: []
         }
     ];

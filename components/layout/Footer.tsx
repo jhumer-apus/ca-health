@@ -1,7 +1,6 @@
 import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
 
 export default function Footer() {
-    console.log(process.env.NEXT_PUBLIC_LOGO)
     return (
         <footer className="bg-zinc-800 p-12">
             <div className="flex flex-col md:flex-row flex-wrap gap-8 md:gap-40 w-fit m-auto">
