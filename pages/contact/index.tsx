@@ -1,6 +1,5 @@
 import ContactForm from "@/components/contact/ContactForm"
 import ContactInfo from "@/components/contact/ContactInfo"
-import { Button, TextareaAutosize, TextField } from "@mui/material"
 
 
 export default function Contact() {

@@ -1,7 +1,8 @@
+import { RouteType } from "@/types/route";
 import Link from "next/link";
 
 interface Props {
-    route: any
+    route: RouteType
 }
 export default function SubMenuItem(props: Props) {
 

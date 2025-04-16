@@ -1,6 +1,6 @@
 import { useRoutes } from "@/hooks/routes"
 import HighlightOffIcon from '@mui/icons-material/HighlightOff';
-import { Fragment, useRef, useState } from "react";
+import { Fragment, useRef } from "react";
 import MenuItem from "./sidebar/MenuItem";
 import SubMenuItem from "./sidebar/SubMenuItem";
 import { useSidebarStore } from "@/store/navigation/sidebarStore";
@@ -11,7 +11,7 @@ export default function Sidebar() {
     
     const backDropRef = useRef(null)
 
-    const handleBackDropRef = (e:any) => {
+    const handleBackDropRef = (e: React.MouseEvent<HTMLDivElement>) => {
         if(backDropRef.current == e.target) {
             setIsShow(false)
         }

@@ -3,10 +3,11 @@ import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import { useSidebarStore } from "@/store/navigation/sidebarStore";
 import { useRouter } from "next/router";
+import { RouteType } from "@/types/route";
 
 
 interface Props {
-    route: any;
+    route: RouteType;
 }
 export default function MenuItem(props:Props){
 
@@ -16,7 +17,7 @@ export default function MenuItem(props:Props){
 
     const { route } = props
 
-    const showSubMenu = (route:any) =>{
+    const showSubMenu = (route:RouteType) =>{
         if(route.id == currentMenuId) {
             setCurrentMenuId("")
         } else {
@@ -24,7 +25,7 @@ export default function MenuItem(props:Props){
         }
     }
 
-    const isActive = (route:any) => {
+    const isActive = (route:RouteType) => {
         return router.pathname == route.href
     }
     return (

@@ -1,4 +1,3 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import RedirectButton from "@/components/RedirectButton";
 import ProductCard from "@/components/ProductCard";
 import Link from "next/link";

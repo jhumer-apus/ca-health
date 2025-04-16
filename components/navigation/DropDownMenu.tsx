@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { RouteType } from '@/types/route';
@@ -18,7 +17,7 @@ export default function DropDownMenu(props:Props) {
     const handleMouseEnter = (event: React.MouseEvent<HTMLDivElement>) => {
         setAnchorEl(() => event.currentTarget);
     };
-    const handleClose = (event: React.MouseEvent<HTMLDivElement>) => {
+    const handleClose = () => {
         setAnchorEl(() => null);
     };
 

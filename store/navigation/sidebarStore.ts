@@ -2,8 +2,8 @@ import { create } from 'zustand'
 
 type SidebarStore = {
   isShow: boolean
-  currentMenuId: string
-  setCurrentMenuId: (id: string) => void
+  currentMenuId: string | number
+  setCurrentMenuId: (id: string | number) => void
   setIsShow: (val: boolean) => void
 }
 

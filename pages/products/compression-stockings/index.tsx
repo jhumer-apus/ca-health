@@ -1,5 +1,4 @@
 import ConcernSection from "@/components/contact/ConcernSection"
-import ContactUsButton from "@/components/contact/ContactUsButton"
 import ProductIntro from "@/components/ProductIntro"
 
 export default function CompressionStockings() {
