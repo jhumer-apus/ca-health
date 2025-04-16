@@ -34,7 +34,7 @@ export default function Home() {
           <div className="absolute inset-0 flex flex-col gap-8 items-center justify-center">
             <div className="p-4 rounded flex flex-col gap-8">
               <p className="text-white text-8xl font-semibold text-center">{process.env.NEXT_PUBLIC_COMPANY}</p>
-              <p className="text-center text-orange-500 text-2xl">"Freedom to live life"</p>
+              <p className="text-center text-orange-500 text-2xl">&quot;Freedom to live life &quot;</p>
             </div>
             <Link href="/contact">
               <button className="bg-gray-700/30 transition-all px-8 py-4 font-semibold border tracking-[2] border-white rounded-lg hover:cursor-pointer hover:bg-orange-400 text-2xl">BOOK YOUR APPOINTMENT</button>
