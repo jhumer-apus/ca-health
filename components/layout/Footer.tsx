@@ -1,4 +1,5 @@
 import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
+import Link from 'next/link';
 
 export default function Footer() {
     return (
@@ -9,10 +10,12 @@ export default function Footer() {
                         <img src={process.env.NEXT_PUBLIC_LOGO} width={60}/>
                         <p className="text-4xl font-bold break-words">Tandem<br />Health</p>
                     </div>
-                    <button className="transition-all cursor-pointer px-4 py-2 bg-gray-600 hover:bg-orange-500 rounded-xl my-4 flex items-center gap-2">
-                        <ChatBubbleIcon />
-                        <p>Email Us</p>
-                    </button>
+                    <Link href="/contact">
+                        <button className="transition-all cursor-pointer px-4 py-2 bg-gray-600 hover:bg-orange-500 rounded-xl my-4 flex items-center gap-2">
+                            <ChatBubbleIcon />
+                            <p>Email Us</p>
+                        </button>
+                    </Link>
                 </div>
 
                 <div id="location-info-wrapper">

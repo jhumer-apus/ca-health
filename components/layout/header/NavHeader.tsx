@@ -17,7 +17,7 @@ export default function NavHeader() {
                         ) :
                         (
                             <Link href={route.href}>
-                                <div className="text-white text-md">{route.name}</div>
+                                <div className="text-white text-md hover:text-orange-500">{route.name}</div>
                             </Link>
                         )}
                     </li>

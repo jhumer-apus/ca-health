@@ -8,7 +8,7 @@ export default function SubMenuItem(props: Props) {
     const { route } = props 
     return (
         <li>
-            <Link href="">
+            <Link href={route.href}>
                 <div className="pl-8 py-4">
                     {route.name}
                 </div>

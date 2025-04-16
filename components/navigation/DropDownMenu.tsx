@@ -24,7 +24,7 @@ export default function DropDownMenu(props:Props) {
 
     return (
         <div className='flex items-center gap-2'>
-            <Link href={route.href}>{route.name}</Link>
+            <Link href={route.href} className='hover:text-orange-500'>{route.name}</Link>
             <div
                 id={`${route.id}-dropdown`}
                 aria-controls={open ? `${route.id}-dropdown` : undefined}
