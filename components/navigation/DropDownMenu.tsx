@@ -43,9 +43,9 @@ export default function DropDownMenu(props:Props) {
                 onClose={handleClose}
             >
                 {route.subRoutes.map((route,index:number) => (
-                    <MenuItem key={index}>
-                        <Link href={route.href}>
-                            <div>{route.name}</div>
+                    <MenuItem key={index} className='size-full'>
+                        <Link href={route.href} className='size-full'>
+                            <div className='size-full'>{route.name}</div>
                         </Link>
                     </MenuItem>
                 ))}
