@@ -7,8 +7,10 @@ export default function Footer() {
             <div className="flex flex-col md:flex-row flex-wrap gap-8 md:gap-40 w-fit m-auto">
                 <div id="email-wrapper">
                     <div className="flex items-center gap-4">
-                        <img src={process.env.NEXT_PUBLIC_LOGO} width={60}/>
-                        <p className="text-4xl font-bold break-words">Tandem<br />Health</p>
+                        <div className='rounded-full overflow-hidden bg-red-100'>
+                            <img src={process.env.NEXT_PUBLIC_LOGO} width={60}/>
+                        </div>
+                        <p className="text-4xl font-bold break-words whitespace-wrap">{process.env.NEXT_PUBLIC_COMPANY}</p>
                     </div>
                     <Link href="/contact">
                         <button className="transition-all cursor-pointer px-4 py-2 bg-gray-600 hover:bg-orange-500 rounded-xl my-4 flex items-center gap-2">

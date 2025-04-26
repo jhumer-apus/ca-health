@@ -14,7 +14,7 @@ export const products: ProductType[] = [
     },
     {
         name: "Compression Stockings",
-        description: "Gradient compression garments are used to increase blood circulation and reduce swelling in those with circulation disorders and can also assist in athletic performance. Gradient compression socks, for example, apply the greatest amount of pressure near the ankle and decreases as it extends up the calf, stopping under the knee cap. Athletic gradient compression garments, usually made of spandex, offer support all over the body using the same principles to provide structural support. Athletes also use them as a recovery aid. That doesn’t mean that they are only meant for the athletically inclined.",
+        description: "Compression stockings are specially designed socks or hosiery that apply gentle pressure to your legs and ankles. They help improve blood flow, reduce swelling, and prevent issues like varicose veins, deep vein thrombosis (DVT), and leg fatigue. Commonly used for medical, athletic, or everyday purposes, compression stockings come in different pressure levels and styles to meet individual needs.",
         imagePath: "images/compression.png",
         href:"/products/compression-stockings"
 
