@@ -1,5 +1,7 @@
 import ConcernSection from "@/components/contact/ConcernSection"
 import ProductIntro from "@/components/ProductIntro"
+import MenStocking from "@/components/products/stockings/MenStocking"
+import WomenStocking from "@/components/products/stockings/WomenStocking"
 
 export default function CompressionStockings() {
 
@@ -16,6 +18,13 @@ export default function CompressionStockings() {
             name: "PantyHose",
             imagePath: "/images/compressions/pantyhose.png"
         }
+    ]
+
+    const menStockings = [
+        {
+            name: "1",
+            imagePath: "/images/compressions/sigvaris/sigvaris-stocking-men.png"
+        },
     ]
 
     const prodIntro = {
@@ -43,12 +52,17 @@ export default function CompressionStockings() {
                 </div>
             </section>
 
-            <section className="bg-[url('/images/compressions/sport-compression.png')] bg-contain p-4 md:p-32">
+            <section className="bg-gray-900 p-12 flex flex-col gap-8">
+                <WomenStocking />
+                <MenStocking />
+            </section>
+
+            {/* <section className="bg-[url('/images/compressions/sport-compression.png')] bg-contain p-4 md:p-32">
                 <div className="m-auto md:max-w-[1000px] m-auto bg-zinc-900/90 p-8 md:p-12 rounded-xl">
                     <h2 className="text-6xl font-bold break-words text-center md:text-right">Sports Compression</h2><br/><br/>
                     <div className="text-lg max-w-150 ml-auto text-center md:text-right">The Compression Sock Training sports stocking has special functional zones with light compression to provide protection in stop-and-go sports. These are sports involving rapid turning and jumping movements, like football, basketball or tennis. The stocking’s taping zone helps to create a greater feeling of stability in the ankle, while its muscle-toning zone specifically stimulates the calf muscles during movement.</div>
                 </div>
-            </section>
+            </section> */}
 
             <ConcernSection 
                 statement="Feel free to ask us which stockings are best suited for your needs. ~ Alberta Team
