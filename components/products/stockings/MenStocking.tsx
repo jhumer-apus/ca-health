@@ -27,8 +27,8 @@ export default function MenStocking() {
             
             <div className="w-full">
                 <div className="w-fit m-auto flex flex-col md:flex-row flex-wrap gap-4">
-                    {menStockings.map(item => (
-                        <div >
+                    {menStockings.map((item, index:number) => (
+                        <div key={index}>
                             <img src={item.imagePath} width={300}/>
                         </div>
                     ))}

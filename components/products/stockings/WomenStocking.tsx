@@ -29,8 +29,8 @@ export default function WomenStocking() {
             </div>
             <div className="w-full">
                 <div className="w-fit m-auto flex flex-col md:flex-row flex-wrap gap-4">
-                    {womenStockings.map(item => (
-                        <div >
+                    {womenStockings.map((item,index:number) => (
+                        <div key={index}>
                             <img src={item.imagePath} width={300}/>
                         </div>
                     ))}
