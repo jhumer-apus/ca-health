@@ -21,13 +21,6 @@ export default function CompressionStockings() {
         }
     ]
 
-    const menStockings = [
-        {
-            name: "1",
-            imagePath: "/images/compressions/sigvaris/sigvaris-stocking-men.png"
-        },
-    ]
-
     const prodIntro = {
         name: "Compression Stockings",
         coverImagePath: "/images/compression2.png",

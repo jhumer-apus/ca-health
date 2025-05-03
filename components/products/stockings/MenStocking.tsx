@@ -1,6 +1,4 @@
 export default function MenStocking() {
-
-    
     const menStockings = [
         {
             name: "1",

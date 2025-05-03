@@ -1,7 +1,7 @@
 import HomeWorkIcon from '@mui/icons-material/HomeWork';
-import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
+// import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
 import EmailIcon from '@mui/icons-material/Email';
-import AccessTimeFilledIcon from '@mui/icons-material/AccessTimeFilled';
+// import AccessTimeFilledIcon from '@mui/icons-material/AccessTimeFilled';
 
 export default function ContactInfo() {
 
