@@ -24,18 +24,18 @@ export default function Home() {
   return (
     <div className="text-white">
       <main className="">
-        <section className="w-full h-[650px] overflow-hidden">
-          <video width="full" autoPlay loop muted className="transform -translate-y-1/5" >
+        <section className="w-full h-[650px] overflow-hidden bg-black">
+          <video width="full" autoPlay loop muted className="transform -translate-y-1/5 hidden md:block" >
             <source src="video/running.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div className="absolute inset-0 flex flex-col gap-8 items-center justify-center">
+          <div className="absolute inset-0 flex flex-col gap-8 items-center justify-center p-8">
             <div className="p-4 rounded flex flex-col gap-8">
-              <p className="text-white text-8xl font-semibold text-center">{process.env.NEXT_PUBLIC_COMPANY}</p>
+              <p className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-center">{process.env.NEXT_PUBLIC_COMPANY}</p>
               <p className="text-center text-orange-500 text-2xl font-semibold">{`"${process.env.NEXT_PUBLIC_MOTTO}"`}</p>
             </div>
             <Link href="/contact">
-              <button className="bg-gray-700/30 transition-all px-8 py-4 font-semibold border tracking-[2] border-white rounded-lg hover:cursor-pointer hover:bg-orange-400 text-2xl">BOOK YOUR APPOINTMENT</button>
+              <button className="bg-gray-700/30 transition-all px-8 py-4 font-semibold border tracking-[2] border-white rounded-lg hover:cursor-pointer hover:bg-orange-400 text-xl md:text-2xl">BOOK YOUR APPOINTMENT</button>
             </Link>
           </div>
         </section>
