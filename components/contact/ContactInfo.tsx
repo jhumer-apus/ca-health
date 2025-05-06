@@ -1,7 +1,7 @@
 import HomeWorkIcon from '@mui/icons-material/HomeWork';
-import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
+// import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
 import EmailIcon from '@mui/icons-material/Email';
-import AccessTimeFilledIcon from '@mui/icons-material/AccessTimeFilled';
+// import AccessTimeFilledIcon from '@mui/icons-material/AccessTimeFilled';
 
 export default function ContactInfo() {
 
@@ -14,20 +14,20 @@ export default function ContactInfo() {
 
             <div id="address-wrapper" className={wrapperClass}>
                 <HomeWorkIcon style={{ fontSize: iconFontSize }} className='text-orange-500'/>
-                <p>3601 19 ST NE, Unit 1</p>
+                <p>700-1816 CROWNCHILD TRAIL NW SUITE 731, CALGARY, ALBERTA, T2M3Y7</p>
             </div>
 
-            <div id="phone-wrapper" className={wrapperClass}>
+            {/* <div id="phone-wrapper" className={wrapperClass}>
                 <PhoneEnabledIcon style={{ fontSize: iconFontSize }} className='text-orange-500'/>
-                <p>(403) 452-9592</p>
-            </div>
+                <p>2026951224</p>
+            </div> */}
 
             
             <div id="email-wrapper" className={wrapperClass}>
                 <EmailIcon style={{ fontSize: iconFontSize }} className='text-orange-500'/>
-                <p>info@tandemhealth.ca</p>
+                <p>vitalcsupplies@gmail.com</p>
             </div>
-
+{/* 
             <div id="schedule-wrapper" className={wrapperClass}>
                 <AccessTimeFilledIcon style={{ fontSize: iconFontSize }} className='text-orange-500'/>
                 <div className='leading-9'>
@@ -35,7 +35,7 @@ export default function ContactInfo() {
                     Sat: 11am to 4pm <br/>
                     Sun - Mon: CLOSED <br/>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

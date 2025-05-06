@@ -13,13 +13,13 @@ export default function WomenStocking() {
     ]
 
     return (
-        <div id="women-stockins-wrapper" className="flex flex-col md:flex-row gap-8">
+        <div id="women-stockins-wrapper" className="">
             <div className="w-full">
                 <div className="w-fit m-auto">
-                    <h2 className="text-4xl font-bold">WOMEN STOCKINGS</h2>
+                    <h2 className="text-4xl font-bold text-center">WOMEN STOCKINGS</h2>
                     <div className="mt-8">
-                        <p className="text-3xl">Available Brands:</p>
-                        <ul className="list-disc pl-5 text-2xl leading-12 mt-4">
+                        <p className="text-3xl text-center">Available Brands:</p>
+                        <ul className="text-2xl leading-12 mt-4 w-fit m-auto flex gap-10">
                             <li>Sigvaris</li>
                             <li>Juzo</li>
                             <li>Jobst</li>

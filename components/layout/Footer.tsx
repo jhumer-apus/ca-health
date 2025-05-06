@@ -22,12 +22,10 @@ export default function Footer() {
 
                 <div id="location-info-wrapper">
                     <p className="text-white text-3xl font-bold">Location & Info</p>
-                    <p className='text-slate-300'>
-                        3601 19 ST NE, Unit 1 <br/>
-                        Calgary, AB<br/>
-                        T2E 6S8<br/>
-                        P: (403) 452-9592<br/>
-                        E: info@tandemhealth.ca<br/>
+                    <p className='text-slate-300 max-w-96 break-words'>
+                        A: 700-1816 CROWNCHILD TRAIL NW SUITE 731, CALGARY, ALBERTA, T2M3Y7<br/>
+                        {/* P: (403) 452-9592<br/> */}
+                        E: vitalcsupplies@gmail.com<br/>
                     </p>
                 </div>
 
@@ -46,7 +44,6 @@ export default function Footer() {
                         Orthopedic Bracing<br/>
                         Compression Stockings<br/>
                         TENS Devices<br/>
-                        Contact Us<br/>
                     </p>
                 </div>
             </div>

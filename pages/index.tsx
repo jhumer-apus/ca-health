@@ -1,6 +1,8 @@
 import RedirectButton from "@/components/RedirectButton";
 import ProductCard from "@/components/ProductCard";
 import Link from "next/link";
+import Head from "next/head";
+
 
 export default function Home() {
   const products = [
@@ -21,8 +23,24 @@ export default function Home() {
       href:"/products/compression-stockings"
     }
   ]
+
+  const title = "Vital Care Supplies Inc.";
+  const description ="Trusted source for quality compression stockings, orthopedic supports, and medical wellness products in Canada.";
+
   return (
     <div className="text-white">
+      <Head>
+        <title>{title}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content={description} />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={process.env.URL} />
+        <meta property="og:image" content={process.env.URL + ""} />
+      </Head>
       <main className="">
         <section className="w-full h-[650px] overflow-hidden bg-black">
           <video width="full" autoPlay loop muted className="transform -translate-y-1/5 hidden md:block" >
